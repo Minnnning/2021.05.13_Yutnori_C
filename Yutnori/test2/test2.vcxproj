@@ -200,9 +200,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="pointXY.cpp" />
-    <ClCompile Include="pointXYtest.cpp" />
-    <ClCompile Include="pointXYTTT.cpp" />
     <ClCompile Include="test2.cpp" />
     <ClCompile Include="test2Dlg.cpp" />
   </ItemGroup>
@@ -213,6 +210,8 @@
     <None Include="res\test2.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\map.bmp" />
+    <Image Include="res\map2.bmp" />
     <Image Include="res\test2.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

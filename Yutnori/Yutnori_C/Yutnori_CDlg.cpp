@@ -153,6 +153,7 @@ void CYutnoriCDlg::OnPaint()
 	}
 	else
 	{
+		
 		CDialogEx::OnPaint();
 	}
 }

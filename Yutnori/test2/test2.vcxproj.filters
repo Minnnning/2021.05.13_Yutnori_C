@@ -53,15 +53,6 @@
     <ClCompile Include="pch.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="pointXY.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="pointXYtest.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="pointXYTTT.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="test2.rc">
@@ -75,6 +66,12 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\test2.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\map.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\map2.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

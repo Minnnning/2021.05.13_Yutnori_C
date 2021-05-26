@@ -42,6 +42,9 @@
     <ClInclude Include="CNaverOAuthDlg.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="CPointXY.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Yutnori_C.cpp">
@@ -60,6 +63,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="CNaverOAuthDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CPointXY.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CPiuntXY.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -91,6 +100,12 @@
       <Filter>리소스 파일</Filter>
     </Image>
     <Image Include="res\test.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\map.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\..\Yutnori_C.ico">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

@@ -45,7 +45,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -194,6 +194,7 @@
   <ItemGroup>
     <ClInclude Include="CClientSocket.h" />
     <ClInclude Include="CNaverOAuthDlg.h" />
+    <ClInclude Include="CPointXY.h" />
     <ClInclude Include="CYutnoriStart.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
@@ -205,6 +206,8 @@
   <ItemGroup>
     <ClCompile Include="CClientSocket.cpp" />
     <ClCompile Include="CNaverOAuthDlg.cpp" />
+    <ClCompile Include="CPiuntXY.cpp" />
+    <ClCompile Include="CPointXY.cpp" />
     <ClCompile Include="CYutnoriStart.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -225,10 +228,12 @@
     <None Include="res\YutnoriC.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\..\..\..\..\..\Yutnori_C.ico" />
     <Image Include="..\..\..\..\test.bmp" />
     <Image Include="..\..\..\..\윷놀이.jpg" />
     <Image Include="res\bitmap1.bmp" />
     <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\map.bmp" />
     <Image Include="res\test.bmp" />
     <Image Include="res\Yutnori_C.ico" />
   </ItemGroup>

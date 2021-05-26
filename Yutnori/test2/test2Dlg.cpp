@@ -66,6 +66,7 @@ BEGIN_MESSAGE_MAP(Ctest2Dlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_WM_LBUTTONDOWN()
 END_MESSAGE_MAP()
 
 
@@ -102,8 +103,7 @@ BOOL Ctest2Dlg::OnInitDialog()
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
 
-	pointXYTTT dlg;
-	dlg.pointXY1
+	
 
 
 
@@ -148,6 +148,22 @@ void Ctest2Dlg::OnPaint()
 	}
 	else
 	{
+		CDC* pDC = GetDC();
+		CClientDC dc(this);
+		CBitmap bmpBack; bmpBack.LoadBitmap(IDB_BITMAP2);
+		BITMAP bitmap; bmpBack.GetBitmap(&bitmap);
+		int nWidth = bitmap.bmWidth;							
+		int nHeight = bitmap.bmHeight;
+		CDC memDC; memDC.CreateCompatibleDC(pDC);
+		memDC.SelectObject(&bmpBack);
+		pDC->BitBlt(20, 20, nWidth, nHeight, &memDC, 0, 0, SRCCOPY);
+		memDC.DeleteDC();
+		bmpBack.DeleteObject();
+
+		//dc.SetPixel(50,50, RGB(100, 0, 100));
+
+
+
 		CDialogEx::OnPaint();
 	}
 }
@@ -159,3 +175,19 @@ HCURSOR Ctest2Dlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void Ctest2Dlg::OnLButtonDown(UINT nFlags, CPoint point)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+	int x = point.x;
+	int y = point.y;
+	CString str;
+	str.Format(_T("X:%.3d Y:%.3d"), x, y);
+	CClientDC dc(this);
+	dc.TextOutW(600, 20, str);
+	
+	
+
+	CDialogEx::OnLButtonDown(nFlags, point);
+}
