@@ -160,8 +160,6 @@ void Ctest2Dlg::OnPaint()
 		memDC.DeleteDC();
 		bmpBack.DeleteObject();
 
-		//dc.SetPixel(50,50, RGB(100, 0, 100));
-
 
 
 		CDialogEx::OnPaint();
